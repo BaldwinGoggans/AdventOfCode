@@ -33,9 +33,9 @@ int main() {
     while (ss >> num) {
       numbers.push_back(num);
     }
-    /** for (int n : numbers) {
-       std::cout << n << " ";
-     }**/
+    for (int n : numbers) {
+      std::cout << n << " ";
+    }
     size = numbers.size();
     std::cout << '\n';
     for (int i = 0; i < size - 1; ++i) {
@@ -48,7 +48,7 @@ int main() {
     if (orderCount == size - 1 || negetiveOrderCount == size - 1) {
       order = true;
     }
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size - 1; i++) {
       if (numbers[i] - numbers[i + 1] > 0 && numbers[i] - numbers[i + 1] < 4) {
         differenceCount++;
       } else if (numbers[i] - numbers[i + 1] < 0 &&
@@ -59,9 +59,9 @@ int main() {
     if (differenceCount == size - 1) {
       difference = true;
     }
-    /**std::cout << order << " " << difference << " " << differenceCount << " "
+    std::cout << order << " " << difference << " " << differenceCount << " "
               << orderCount << " " << negetiveOrderCount << " " << size << '\n';
-    std::cout << '\n';**/
+    std::cout << '\n';
     if (difference == true && order == true) {
       safeReports++;
     }
