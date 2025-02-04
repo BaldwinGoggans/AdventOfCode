@@ -1,0 +1,3 @@
+D:/projects/advent/aoc2024/puzzle3/part1/build/CMakeFiles/run.dir
+D:/projects/advent/aoc2024/puzzle3/part1/build/CMakeFiles/edit_cache.dir
+D:/projects/advent/aoc2024/puzzle3/part1/build/CMakeFiles/rebuild_cache.dir
